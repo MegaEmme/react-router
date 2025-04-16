@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import MainNav from "../components/MainNav"
 
 const About = () => {
     useEffect(() => {
@@ -9,7 +10,7 @@ const About = () => {
     }, [])
 
     return <div>
-        <header>Header About</header>
+        <header><MainNav /></header>
         <h1>About</h1>
     </div>
 }
