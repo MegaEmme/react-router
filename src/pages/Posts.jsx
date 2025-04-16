@@ -25,7 +25,7 @@ const Posts = () => {
                 <div className="post-card" key={element.id}>
                     <h2>Titolo:{element.title}</h2>
                     <p>{element.body}</p>
-                    <h4>userId:{element.userId}</h4>
+                    <h4>[ userId:{element.userId} ]</h4>
                 </div>
             ))}
         </div>

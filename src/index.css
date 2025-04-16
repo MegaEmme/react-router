@@ -35,10 +35,12 @@ ul{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    padding-top: .5rem;
 }
 
 li{
     margin: .5rem 2rem;
+    text-underline-offset: -4rem; /* XD */
 }
 
 .active {
