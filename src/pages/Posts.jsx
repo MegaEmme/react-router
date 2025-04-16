@@ -20,7 +20,7 @@ const Posts = () => {
             })
             .catch(err => {
                 console.error(err)
-                alert('errore')
+                alert('Errore')
             })
     }
     useEffect(getPosts, []);
@@ -29,10 +29,10 @@ const Posts = () => {
     return <div>
         <h1>Lista Posts</h1>
         {postsData.map((element) => (
-            <div key={element.id}>
-                <h2>{element.title}</h2>
+            <div className="post-card" key={element.id}>
+                <h2>Titolo:{element.title}</h2>
                 <p>{element.body}</p>
-                <h3>userId:{element.userId}</h3>
+                <h4>userId:{element.userId}</h4>
             </div>
         ))}
     </div>
