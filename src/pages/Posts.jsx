@@ -10,7 +10,7 @@ const Posts = () => {
     }, [])
 
     return <div>
-        <header><MainNav /></header>
+        {/* <header><MainNav /></header> */}
         <h1>Posts</h1>
     </div>
 }

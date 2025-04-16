@@ -10,7 +10,7 @@ const Home = () => {
     }, [])
 
     return <div>
-        <header><MainNav /></header>
+        {/* <header><MainNav /></header> */}
         <h1>Home Page</h1>
     </div>
 }

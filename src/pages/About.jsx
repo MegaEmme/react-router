@@ -10,7 +10,6 @@ const About = () => {
     }, [])
 
     return <div>
-        <header><MainNav /></header>
         <h1>About</h1>
     </div>
 }
