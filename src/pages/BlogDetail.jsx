@@ -22,7 +22,7 @@ const BlogDetail = () => {
             })
     }
 
-    useEffect(getPost, []);
+    useEffect(getPost, [id]);
 
     const navigate = useNavigate();
 
@@ -42,6 +42,13 @@ const BlogDetail = () => {
             <button onClick={() => {
                 navigate(-1);
             }}>Torna alla pagina precedente</button>
+            <br />
+            <button onClick={() => {
+                navigate(`/posts/${parseInt(id) - 1}`)
+            }}>Post precedente</button>
+            <button onClick={() => {
+                navigate(`/posts/${parseInt(id) + 1}`)
+            }}>Post successivo</button>
         </div>
     </>
 }
